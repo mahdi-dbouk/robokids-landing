@@ -9,54 +9,88 @@
   </head>
   <body class="bg-background">
         <!-- Navbar -->
-        <div class="h-20 w-full flex flex-row justify-start gap-16">
+        <div id="navbar" class="px-4 h-20 w-full flex flex-row justify-between">
           <!-- Logo Section -->
-          <div class="flex flex-row w-56 h-20 justify-end items-center">
-            <div class="h-96 w-96 bg-logoCircle rounded-full absolute -z-10 -top-64 -left-20"></div>
+          <div class="flex flex-row w-56 h-20 justify-start items-center">
+            <div class="w-96 h-96 bg-logoCircle rounded-full absolute -z-10 -top-64 -left-20"></div>
             <img class="h-12 w-12" src="/robokids_logo.svg" alt="logo" />
             <span class="text-4xl font-Nunito font-bold text-white">Robokids</span>
           </div>
               
           <!-- Nav Options Section -->
-          <div>
-            <ul class="flex flex-row gap-4 h-20 items-center font-Nunito font-bold text-white text-2xl">
+          <div class="max-lg:hidden">
+            <ul class="flex flex-row gap-8 h-20 items-center justify-end font-Nunito font-bold text-white xl:text-xl md:text-lg">
               <li class="relative group">
                 <a href="">Our Programs</a>
-                <div class="absolute -bottom-1 left-1/2 w-0 h-1 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
-                <div class="absolute -bottom-1 right-1/2 w-0 h-1 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 left-1/2 w-0 h-0.5 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 right-1/2 w-0 h-0.5 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
               </li>
               <li class="relative group">
                 <a href="">About Us</a>
-                <div class="absolute -bottom-1 left-1/2 w-0 h-1 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
-                <div class="absolute -bottom-1 right-1/2 w-0 h-1 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 left-1/2 w-0 h-0.5 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 right-1/2 w-0 h-0.5 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
               </li>
               <li class="relative group">
                 <a href="">Careers</a>
-                <div class="absolute -bottom-1 left-1/2 w-0 h-1 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
-                <div class="absolute -bottom-1 right-1/2 w-0 h-1 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 left-1/2 w-0 h-0.5 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 right-1/2 w-0 h-0.5 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
               </li>
               <li class="relative group">
                 <a href="">FAQs</a>
-                <div class="absolute -bottom-1 left-1/2 w-0 h-1 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
-                <div class="absolute -bottom-1 right-1/2 w-0 h-1 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 left-1/2 w-0 h-0.5 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 right-1/2 w-0 h-0.5 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
               </li>
               <li class="relative group">
                 <a href="">Contact Us</a>
-                <div class="absolute -bottom-1 left-1/2 w-0 h-1 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
-                <div class="absolute -bottom-1 right-1/2 w-0 h-1 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 left-1/2 w-0 h-0.5 rounded-r-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
+                <div class="absolute -bottom-1 right-1/2 w-0 h-0.5 rounded-l-full bg-white transition-all duration-300 group-hover:w-1/2"></div>
               </li>
             </ul>
           </div>
    
           <!-- Join Free Trial Section -->
-          <div class="h-20 w-auto flex flex-row self-end items-center">
-            <button class="px-4 py-2 h-12 bg-yellow-600 rounded-full">
+          <div class="max-lg:hidden h-20 flex flex-row justify-end items-center">
+            <button id="joinTrial" class="px-4 py-2 h-12 bg-customYellow rounded-full">
               <span class="font-Nunito font-bold text-white">Join Your Free Trial</span>
             </button>
-    
           </div>
-    
+
+          <div class="lg:hidden flex flex-row items-center">
+            <div>
+              <button id="burger-menu-button" class="relative group">
+                <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[60px] h-[60px] transform transition-all bg-background ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+                  <div id="burger-menu-content" class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
+        <div class="h-[calc(100%-80px)] w-100% flex flex-row max-md:justify-center max-md:items-center">
+          <div class="md:flex-3 max-md:justify-center max-md:items-center flex flex-col gap-5 max-sm:gap-10 mx-16 mt-24">
+            <span class="max-md:text-center max-sm:text-3xl text-4xl font-Nunito font-bold text-white">Spark Creativity and Ignite Curiosity with Robotics</span>
+            <span class="max-md:text-center max-sm:text-lg text-xl font-PT-Sans font-[400] text-white">Empowering the Next Generation of Innovators through Hands-on Robotics Education</span>
+            <div class="flex flex-row gap-4">
+              <button id="joinTrial" class="px-4 py-2 h-12 bg-customYellow">
+                <span class="font-Nunito font-bold text-white">Enroll Now!</span>
+              </button>
+
+              <button id="joinTrial" class="px-4 py-2 h-12 bg-customYellow">
+                <span class="font-Nunito font-bold text-white">Learn More >></span>
+              </button>
+
+            </div>
+            <div class="w-auto flex flex-row justify-start sm:items-end max-sm:items-start">
+              <img class="h-[54px] w-[146px] max-sm:h-[32px] max-sm:w-[96px]" src="/STEM-org_Badge_Accredited-Exp_HOS_POS.jpg" alt="stem-accredited">
+            </div>
+          </div>
+          <div class="max-xl:hidden xl:visible flex-2 h-[800px] w-[800px] -right-0 overflow-hidden">
+            <img class="max-xl:hidden xl:visible overflow-hidden" src="/landing-page-hero-image.svg" alt="">
+          </div>
+          <img class="absolute xl:hidden max-xl:visible -z-20 object-cover overflow-clip" src="/background-image.svg" alt="background-image">
+        </div>
+    <div class="absolute top-0 xl:hidden max-xl:visible bg-black opacity-70 h-full w-full -z-10"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
