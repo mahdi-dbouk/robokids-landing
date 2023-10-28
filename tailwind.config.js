@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         background: '#527AC2',
+        customYellow: '#E6A531',
         logoCircle: '#3C5F9F'
       },
       fontFamily: {
