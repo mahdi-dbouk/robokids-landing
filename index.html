@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/robokids_logo.svg" />
@@ -76,7 +76,7 @@
                 <span class="font-Nunito font-bold text-white">Enroll Now!</span>
               </button>
 
-              <button id="joinTrial" class="px-4 py-2 h-12 bg-customYellow">
+              <button id="joinTrial" class="px-4 py-2 h-12 bg-customYellow" onclick="window.location.href='#learn-more'">
                 <span class="font-Nunito font-bold text-white">Learn More >></span>
               </button>
 
@@ -91,6 +91,156 @@
           <img class="absolute xl:hidden max-xl:visible -z-20 object-cover overflow-clip" src="/background-image.svg" alt="background-image">
         </div>
     <div class="absolute top-0 xl:hidden max-xl:visible bg-black opacity-70 h-full w-full -z-10"></div>
+
+    <!-- Introduction Section -->
+    <div id="learn-more" class="h-auto bg-white w-full p-8 pt-32 pb-32 rounded-b-[52px]">
+      <div class="mb-16">
+        <span class="pl-8 font-Nunito font-medium text-6xl text-black">Why Choose <span class="text-background font-black">Robokids?</span></span>
+      </div>
+      <div class="flex flex-row h-full w-full">
+        <div class="flex-1 flex flex-col justify-start items-center px-4 gap-2">
+          <img class="h-56 w-5h-56" src="/no1-1.png" alt="">
+          <span class="font-Nunito font-bold text-2xl text-center">Top 1% Global Educators</span>
+          <span class="font-PT-Sans font-medium text-lg text-center">Rigorously trained to nurture the kids interest, curiosity & learning.</span>
+        </div>
+        
+        <div class="flex-1 flex flex-col justify-start items-center px-4 gap-2">
+          <img class="h-56 w-5h-56" src="/robot_and_books.png" alt="">
+          <span class="font-Nunito font-bold text-2xl text-center" >Futuristic Curriculum</span>
+          <span class="font-PT-Sans font-medium text-lg text-center" >Designed by a global advisory of industry experts and top universities.</span>
+        </div>
+        
+        <div class="flex-1 flex flex-col justify-start items-center px-4 gap-2">
+          <img class="h-56 w-5h-56" src="/earth.jpg" alt="">
+          <span class="font-Nunito font-bold text-2xl text-center" >Access to the Global Arena</span>
+          <span class="font-PT-Sans font-medium text-lg text-center" >Compete with 1M+ future leaders with premium access to our international hackathons.</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="bg-background w-full h-full flex flex-row">
+      <div class="flex-[2] flex flex-col justify-center items-center">
+        <span class="font-PT-Sans font-medium text-white text-5xl">Watch our heroes</span>
+        <span class="font-Nunito font-bold text-customYellow text-5xl underline underline-offset-[14px] decoration-white decoration-wavy">learning in action!</span>
+
+        <button class="bg-white w-auto px-4 py-2 mt-16  rounded-full hover:ring-customYellow hover:ring-4">
+          <span class="text-background font-PT-Sans text-2xl font-bold">Book your free trial!</span>
+        </button>
+      </div>
+      <div class="mt-2 flex-[3] flex flex-col bg-customYellow rounded-l-3xl">
+        <div class="flex-[8] flex flex-row">
+          <div id="first-card" class="w-full h-full flex flex-row justify-center items-center">
+            <div class="h-4/5 w-4/5 bg-white rounded-xl flex flex-col shadow-2xl p-4">
+              <div class="flex-1 flex flex-row items-center gap-4 justify-between">
+                <div class="flex flex-row gap-4 items-center">
+                  <div class="h-24 w-24 bg-gray-600 rounded-full overflow-hidden ring-2 ring-customYellow">
+                    <img class="h-24 w-24 object-cover" src="/smling-kid-1.jpg" alt="">
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-2xl font-bold font-PT-Sans">John Doe</span>
+                    <span class="text-xl font-semibold font-PT-Sans text-gray-600">Age: 7</span>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center">
+                  <span class="text-yellow-500 p-0 text-5xl">&bigstar;</span>
+                  <span class="text-xl font-bold font-PT-Sans text-green-600">Little Hero</span>
+                </div>
+              </div>
+              <div class="flex-[5] flex flex-row">
+                <div class="flex-[2] flex flex-col p-2 mt-2 gap-1">
+                  <span class="font-Nunito font-bold text-md">Project Name</span>
+                  <span class="font-PT-Sans font-medium text-sm">Tic-Tac-Toe Solver</span>
+                  <span class="font-Nunito font-bold text-md">Project Description</span>
+                  <span class="font-PT-Sans font-medium text-xs text-justify">
+                    The LEGO Tic Tac Toe Solver Robot is an innovative robotic solution designed to play and solve the classic game of Tic Tac Toe. This compact and intelligent LEGO robot utilizes advanced programming and sensor technologies to analyze the game board, make strategic moves, and ultimately defeat opponents with precise precision.
+                  </span>
+                  
+                </div>
+                <div class="flex-[3] h-64 w-72 flex flex-row overflow-hidden items-center justify-center rounded-xl">
+                  <img class="object-fill" src="/tictactoe-solver.png" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div id="second-card" class="w-full h-full flex flex-row justify-center items-center">
+            <div class="h-4/5 w-4/5 bg-white rounded-xl flex flex-col shadow-2xl p-4">
+              <div class="flex-1 flex flex-row items-center gap-4 justify-between">
+                <div class="flex flex-row gap-4 items-center">
+                  <div class="h-24 w-24 bg-gray-600 rounded-full overflow-hidden ring-2 ring-customYellow">
+                    <img class="h-24 w-24 object-cover" src="/kid-smiling-2.jpg" alt="">
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-2xl font-bold font-PT-Sans">Jenny Martin</span>
+                    <span class="text-xl font-semibold font-PT-Sans text-gray-600">Age: 10</span>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center">
+                  <span class="text-yellow-500 p-0 text-5xl">&bigstar;</span>
+                  <span class="text-xl font-bold font-PT-Sans text-green-600">Junior Hero</span>
+                </div>
+              </div>
+              <div class="flex-[5] flex flex-row">
+                <div class="flex-[2] flex flex-col p-2 mt-2 gap-1">
+                  <span class="font-Nunito font-bold text-md">Project Name</span>
+                  <span class="font-PT-Sans font-medium text-sm">Dancing Bot</span>
+                  <span class="font-Nunito font-bold text-md">Project Description</span>
+                  <span class="font-PT-Sans font-medium text-xs text-justify">
+                    The LEGO Dancing Bot is a captivating robotic creation that brings joy and entertainment to life through its rhythmic dance moves. This dynamic and programmable LEGO robot showcases smooth and synchronized motions, captivating audiences with its impressive choreography. With its vibrant design and interactive features, the Dancing Bot combines the excitement of LEGO building with the artistry of dance, creating a delightful and engaging experience for all ages.
+                  </span>
+                  
+                </div>
+                <div class="flex-[3] h-64 w-72 flex flex-row overflow-hidden items-center justify-center rounded-xl">
+                  <img class="object-fill" src="/dancing-bot.png" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div id="third-card" class="w-full h-full flex flex-row justify-center items-center">
+            <div class="h-4/5 w-4/5 bg-white rounded-xl flex flex-col shadow-2xl p-4">
+              <div class="flex-1 flex flex-row items-center gap-4 justify-between">
+                <div class="flex flex-row gap-4 items-center">
+                  <div class="h-24 w-24 bg-gray-600 rounded-full overflow-hidden ring-2 ring-customYellow">
+                    <img class="h-24 w-24 object-cover" src="/kid-smiling-3.jpg" alt="">
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-2xl font-bold font-PT-Sans">Jack Kimbley</span>
+                    <span class="text-xl font-semibold font-PT-Sans text-gray-600">Age: 15</span>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center">
+                  <span class="text-yellow-500 p-0 text-5xl">&bigstar;</span>
+                  <span class="text-xl font-bold font-PT-Sans text-green-600">Senior Hero</span>
+                </div>
+              </div>
+              <div class="flex-[5] flex flex-row">
+                <div class="flex-[2] flex flex-col p-2 mt-2 gap-1">
+                  <span class="font-Nunito font-bold text-md">Project Name</span>
+                  <span class="font-PT-Sans font-medium text-sm">Path Finder</span>
+                  <span class="font-Nunito font-bold text-md">Project Description</span>
+                  <span class="font-PT-Sans font-medium text-xs text-justify">
+                    The LEGO Path Finding Bot is a smart robot that navigates mazes and finds optimal routes. With advanced sensors and algorithms, it analyzes surroundings for efficient pathfinding, offering an interactive and educational experience for learning and adventure.
+                  </span>
+                  
+                </div>
+                <div class="flex-[3] h-64 w-72 flex flex-row overflow-hidden items-center justify-center rounded-xl">
+                  <img class="object-fill" src="/path-finding.png" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="flex-[2] flex flex-row justify-center items-center gap-4"> 
+          <button id="left-btn"><span class="bg-white text-background text-5xl px-12 font-bold rounded-full">&larr;</span></button>
+          <button id="right-btn"><span class="bg-white text-background text-5xl px-12 font-bold rounded-full">&rarr;</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="h-full w-full flex flex-col bg-white">
+
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
