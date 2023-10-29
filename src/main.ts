@@ -1,7 +1,6 @@
 import burgerMenuHandler from "./burgerMenu";
 
 const joinTrial: HTMLButtonElement = document.querySelector('#joinTrial')!
-let burgerMenuClicked: number = 0
 
 joinTrial.addEventListener('click', (e: Event) => {
   const target: EventTarget = e.target!;
