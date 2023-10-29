@@ -72,7 +72,7 @@
             <span class="max-md:text-center max-sm:text-3xl text-4xl font-Nunito font-bold text-white">Spark Creativity and Ignite Curiosity with Robotics</span>
             <span class="max-md:text-center max-sm:text-lg text-xl font-PT-Sans font-[400] text-white">Empowering the Next Generation of Innovators through Hands-on Robotics Education</span>
             <div class="flex flex-row gap-4">
-              <button id="joinTrial" class="px-4 py-2 h-12 bg-customYellow rounded-full hover:ring-2 ring-white">
+              <button id="joinTrial" class="px-4 py-2 h-12 bg-customYellow rounded-full hover:ring-2 ring-white" onclick="window.location.href='#book-a-trial'">
                 <span class="font-Nunito font-bold text-white">Book A Free Trial</span>
               </button>
 
@@ -150,7 +150,7 @@
         <span class="font-PT-Sans font-medium text-white text-5xl">Watch our heroes</span>
         <span class="font-Nunito font-bold text-customYellow text-5xl underline underline-offset-[14px] decoration-white decoration-wavy">learning in action!</span>
 
-        <button class="bg-white w-auto px-4 py-2 mt-16  rounded-full hover:ring-customYellow hover:ring-4">
+        <button class="bg-white w-auto px-4 py-2 mt-16  rounded-full hover:ring-customYellow hover:ring-4" onclick="window.location.href='#book-a-trial'">
           <span class="text-background font-PT-Sans text-2xl font-bold">Book your free trial!</span>
         </button>
       </div>
@@ -341,7 +341,18 @@
         </button>
       </div>
     </div>
-    
+    <div id="book-a-trial" class="w-full h-full bg-customYellow flex flex-row rounded-t-3xl">
+      <div class="flex-1 overflow-hidden">
+        <img src="/kid-building-robot.png" alt="">
+      </div>
+      <div class="p-4 flex-1 flex flex-col items-center justify-center gap-8">
+        <span class="font-Nunito font-bold text-4xl text-white text-center">Book Your Free Trial Today!</span>
+        <div class="flex w-4/5 flex-row items-center justify-center">
+          <input class=" p-[18px] w-3/4 rounded-l-md" type="email" name="email" placeholder="Email" id="email-input">
+          <button class="p-4 w-20 flex flex-row items-center justify-center font-bold text-lg text-white bg-background rounded-r-md hover:ring-2 ring-white">></button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
